@@ -91,33 +91,33 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            МАГИСТРАТУРА
           </Badge>
           <Badge
             variant="outline"
             className="hidden lg:flex bg-white/5 text-white border-white/20 font-open-sans-custom text-xs"
           >
-            <SparklesIcon className="me-1 size-3" /> Популярный
+            <SparklesIcon className="me-1 size-3" /> Популярная
           </Badge>
           <div className="ml-auto">
             <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-open-sans-custom text-xs">
-              Подписаться
+              Подать заявку
             </Button>
           </div>
         </div>
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              2 года
             </span>
-            <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
+            <span className="text-gray-300 text-xs font-open-sans-custom"> обучения</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "Углублённая специализация по выбранному направлению",
+              "Участие в научно-исследовательских проектах",
+              "Стажировки в партнёрских компаниях и организациях",
+              "Защита магистерской диссертации",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,47 +129,50 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
-        priceLabel="0 ₽"
+        titleBadge="БАКАЛАВРИАТ"
+        priceLabel="4 года"
+        priceSuffix=" обучения"
         features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
+          "Фундаментальная подготовка по специальности",
+          "Лабораторные и практические занятия",
+          "Производственная практика",
+          "Диплом государственного образца",
         ]}
         className="lg:col-span-3"
-        cta="Начать"
+        cta="Поступить"
       />
 
       <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
+        titleBadge="АСПИРАНТУРА"
+        priceLabel="3–4 года"
+        priceSuffix=" обучения"
         features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
+          "Подготовка к защите кандидатской диссертации",
+          "Научный руководитель — профессор кафедры",
+          "Публикации в рецензируемых журналах",
         ]}
         className="lg:col-span-4"
+        cta="Подать заявку"
       />
 
       <PricingCard
-        titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
+        titleBadge="ПОВЫШЕНИЕ КВАЛИФИКАЦИИ"
+        priceLabel="72–144 ч"
+        priceSuffix=" курс"
+        features={["Актуальные программы для специалистов", "Удостоверение о повышении квалификации", "Гибкий формат: очно и онлайн"]}
         className="lg:col-span-4"
+        cta="Записаться"
       />
 
       <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
+        titleBadge="ПРОФПЕРЕПОДГОТОВКА"
         priceLabel="По запросу"
         priceSuffix=""
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "Корпоративные программы для организаций",
+          "Индивидуальный учебный план",
+          "Диплом о профессиональной переподготовке",
+          "Выездные форматы обучения",
         ]}
         className="lg:col-span-8"
         cta="Связаться"
